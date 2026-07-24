@@ -14,7 +14,7 @@
   html{scroll-behavior:smooth;}
   body{
     font-family:'Space Grotesk', sans-serif;
-    background:var(--lime);
+    background:var(--lime) url('assets/background.png') no-repeat center top / cover fixed;
     color:var(--ink);
     overflow-x:hidden;
     position:relative;
@@ -58,11 +58,7 @@
   /* ---- nav ---- */
   header{
     position:sticky; top:0; z-index:50;
-    background:
-      linear-gradient(180deg, rgba(23,29,61,0.75), rgba(16,20,42,0.85)),
-      url('assets/background.png');
-    background-size: cover;
-    background-position: center 20%;
+    background: linear-gradient(180deg, rgba(23,29,61,0.82), rgba(16,20,42,0.88));
     border-bottom:3px solid var(--gold);
   }
   .nav{
@@ -117,12 +113,7 @@
   /* ---- hero ---- */
   .hero{
     position:relative;
-    background:
-      linear-gradient(160deg, rgba(27,33,72,0.72) 0%, rgba(16,20,42,0.8) 60%, rgba(12,15,34,0.88) 100%),
-      url('assets/background.png');
-    background-size: cover;
-    background-position: center 15%;
-    background-attachment: scroll;
+    background: linear-gradient(160deg, rgba(27,33,72,0.8) 0%, rgba(16,20,42,0.85) 60%, rgba(12,15,34,0.9) 100%);
     padding:56px 28px 70px;
     overflow:hidden;
   }
@@ -226,11 +217,7 @@
 
   /* ---- marquee ---- */
   .marquee{
-    background:
-      linear-gradient(180deg, rgba(16,20,42,0.85), rgba(16,20,42,0.85)),
-      url('assets/background.png');
-    background-size: cover;
-    background-position: center 40%;
+    background: rgba(16,20,42,0.88);
     color:var(--lime);
     border-top:4px solid var(--ink);
     border-bottom:4px solid var(--ink);
@@ -249,11 +236,7 @@
 
   /* ---- origin / comic section ---- */
   .origin{
-    background:
-      linear-gradient(160deg, rgba(16,20,42,0.82), rgba(16,20,42,0.9)),
-      url('assets/background.png');
-    background-size: cover;
-    background-position: center 60%;
+    background: linear-gradient(160deg, rgba(16,20,42,0.84), rgba(16,20,42,0.9));
     color:var(--white);
     padding:80px 24px;
   }
@@ -391,11 +374,7 @@
 
   /* ---- chart ---- */
   .chart{
-    background:
-      linear-gradient(160deg, rgba(16,20,42,0.85), rgba(16,20,42,0.9)),
-      url('assets/background.png');
-    background-size: cover;
-    background-position: center 70%;
+    background: linear-gradient(160deg, rgba(16,20,42,0.87), rgba(16,20,42,0.92));
     color:var(--white);
     padding:70px 24px;
     text-align:center;

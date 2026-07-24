@@ -11,7 +11,7 @@
     --skin: #C98B5E;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth; overflow-x:hidden;}
+  html{scroll-behavior:smooth; overflow-x:clip;}
   body{
     font-family:'Space Grotesk', sans-serif;
     background:var(--lime) url('assets/background.png') no-repeat center top / cover fixed;

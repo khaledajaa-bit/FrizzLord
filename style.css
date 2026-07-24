@@ -11,12 +11,11 @@
     --skin: #C98B5E;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth; overflow-x:hidden;}
   body{
     font-family:'Space Grotesk', sans-serif;
     background:var(--lime) url('assets/background.png') no-repeat center top / cover fixed;
     color:var(--ink);
-    overflow-x:hidden;
     position:relative;
   }
   header, .hero, .marquee, .origin, .chain-divider, .buy, .chart, .join, footer{
@@ -38,6 +37,7 @@
   .chain-divider{
     height:34px;
     width:100%;
+    background-color:var(--lime);
     background-repeat:repeat-x;
     background-size:52px 34px;
     background-position:center;
@@ -217,8 +217,8 @@
 
   /* ---- marquee ---- */
   .marquee{
-    background: rgba(16,20,42,0.88);
-    color:var(--lime);
+    background: var(--gold);
+    color:var(--ink);
     border-top:4px solid var(--ink);
     border-bottom:4px solid var(--ink);
     overflow:hidden;
@@ -229,6 +229,7 @@
     display:inline-block;
     font-family:'Anton', sans-serif;
     font-size:20px;
+    letter-spacing:0.5px;
     animation:scroll 26s linear infinite;
     padding-left:100%;
   }

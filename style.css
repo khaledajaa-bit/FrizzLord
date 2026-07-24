@@ -17,6 +17,23 @@
     background:var(--lime);
     color:var(--ink);
     overflow-x:hidden;
+    position:relative;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url('assets/background.png');
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
+    opacity:0.09;
+    z-index:0;
+    pointer-events:none;
+  }
+  header, .hero, .marquee, .origin, .chain-divider, .buy, .chart, .join, footer{
+    position:relative;
+    z-index:1;
   }
   h1,h2,h3, .display{
     font-family:'Anton', sans-serif;
@@ -53,7 +70,7 @@
   /* ---- nav ---- */
   header{
     position:sticky; top:0; z-index:50;
-    background:linear-gradient(180deg, #171D3D, #10142A);
+    background:linear-gradient(180deg, #171D3DF0, #10142AF0);
     border-bottom:3px solid var(--gold);
   }
   .nav{
@@ -108,7 +125,7 @@
   /* ---- hero ---- */
   .hero{
     position:relative;
-    background:linear-gradient(160deg, #1B2148 0%, #10142A 60%, #0C0F22 100%);
+    background:linear-gradient(160deg, #1B2148F0 0%, #10142AF0 60%, #0C0F22F0 100%);
     padding:56px 28px 70px;
     overflow:hidden;
   }
@@ -212,7 +229,7 @@
 
   /* ---- marquee ---- */
   .marquee{
-    background:var(--navy);
+    background:#10142AF0;
     color:var(--lime);
     border-top:4px solid var(--ink);
     border-bottom:4px solid var(--ink);
@@ -231,7 +248,7 @@
 
   /* ---- origin / comic section ---- */
   .origin{
-    background:var(--navy);
+    background:#10142AF0;
     color:var(--white);
     padding:80px 24px;
   }
@@ -336,7 +353,7 @@
 
   /* ---- how to buy ---- */
   .buy{
-    background:var(--lime);
+    background:#C6F229F0;
     padding:80px 24px;
   }
   .section-head{ text-align:center; margin-bottom:50px; }
@@ -369,7 +386,7 @@
 
   /* ---- chart ---- */
   .chart{
-    background:var(--navy);
+    background:#10142AF0;
     color:var(--white);
     padding:70px 24px;
     text-align:center;
@@ -389,7 +406,7 @@
 
   /* ---- join ---- */
   .join{
-    background:var(--gold);
+    background:#F5C518F0;
     padding:80px 24px;
     text-align:center;
     position:relative;
@@ -401,7 +418,7 @@
   .join .ctas{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
 
   footer{
-    background:var(--ink); color:#B8B8B8;
+    background:#0A0A0AF0; color:#B8B8B8;
     padding:40px 24px 30px;
   }
   .foot-grid{
